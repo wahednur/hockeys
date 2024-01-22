@@ -23,6 +23,7 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="asstes/css/custom.css" />
     <style>
       .font-manrope {
         font-family: "Manrope", sans-serif;
@@ -32,35 +33,50 @@
   </head>
   <body class="font-manrope">
     <!-- header section start  -->
-    <!-- Header menubar/navigation start  -->
-    <div class="container mx-auto">
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div
-              tabindex="0"
-              role="button"
-              class="btn btn-ghost pl-0 pr-0 lg:hidden"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+
+    <header>
+      <!-- Header menubar/navigation start  -->
+      <div class="container mx-auto">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost pl-0 pr-0 lg:hidden"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
+            <a class="btn btn-ghost text-xl lg:pl-0"
+              ><img class="h-6 lg:h-9" src="asstes/images/hockeys.svg" alt=""
+            /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
               <li><a>Home</a></li>
               <li><a>About</a></li>
               <li><a>Pages</a></li>
@@ -68,31 +84,101 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl"
-            ><img class="h-6 lg:h-9" src="asstes/images/hockeys.svg" alt=""
-          /></a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Pages</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contact</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <i
-            class="fa-solid fa-magnifying-glass text-lg mr-2 lg:text-2xl lg:mr-6"
-          ></i>
-          <a
-            class="btn lg:h-[58px] bg-[#FF4240] text-white font-bold px-[17px] py-2 text-[18px] lg:text-xl lg:px-6 lg:py-[14px]"
-            >Get Ticket</a
-          >
+          <div class="navbar-end">
+            <i
+              class="fa-solid fa-magnifying-glass text-lg mr-2 lg:text-2xl lg:mr-6"
+            ></i>
+            <a
+              class="btn lg:h-[58px] bg-[#FF4240] text-white font-bold px-[17px] py-2 text-[18px] lg:text-xl lg:px-6 lg:py-[14px]"
+              >Get Ticket</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Header menubar/navigation end  -->
+      <!-- Header menubar/navigation end  -->
+      <!-- Header slider start  -->
+      <div class="container mx-auto">
+        <div class="carousel w-full">
+          <!-- Slide 01 start  -->
+          <div
+            id="slide1"
+            class="carousel-item relative w-full flex-col lg:flex-row"
+          >
+            <img src="asstes/images/1.png" class="w-full" />
+            <div
+              class="lg:absolute bg-[#131318] text-white p-8 w-full lg:w-2/4 right-8 bottom-8 rounded-2xl space-y-4 mt-4"
+            >
+              <h4 class="text-lg lg:text-2xl font-extrabold">
+                Meet all the heroes from the field
+              </h4>
+              <p>
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+            <div
+              class="sl-btn-control absolute flex justify-center items-center w-full lg:justify-start gap-3 lg:gap-4 transform lg:bottom-5 bottom-72 md:bottom-48 lg:left-5 right-5"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- Slide 01 end  -->
+          <!-- Slide 02 start  -->
+          <div
+            id="slide2"
+            class="carousel-item relative w-full flex-col lg:flex-row"
+          >
+            <img src="asstes/images/1.png" class="w-full" />
+            <div
+              class="lg:absolute bg-[#131318] text-white p-8 w-full lg:w-2/4 right-8 bottom-8 rounded-2xl space-y-4 mt-4"
+            >
+              <h4 class="text-lg lg:text-2xl font-extrabold">
+                Meet all the heroes from the field
+              </h4>
+              <p>
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+            <div
+              class="sl-btn-control absolute flex justify-center items-center w-full lg:justify-start gap-3 lg:gap-4 transform lg:bottom-5 bottom-72 md:bottom-48 lg:left-5 right-5"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- Slide 02 end  -->
+          <!-- Slide 03 start  -->
+          <div
+            id="slide3"
+            class="carousel-item relative w-full flex-col lg:flex-row"
+          >
+            <img src="asstes/images/1.png" class="w-full" />
+            <div
+              class="lg:absolute bg-[#131318] text-white p-8 w-full lg:w-2/4 right-8 bottom-8 rounded-2xl space-y-4 mt-4"
+            >
+              <h4 class="text-lg lg:text-2xl font-extrabold">
+                Meet all the heroes from the field
+              </h4>
+              <p>
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+            <div
+              class="sl-btn-control absolute flex justify-center items-center w-full lg:justify-start gap-3 lg:gap-4 transform lg:bottom-5 bottom-72 md:bottom-48 lg:left-5 right-5"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- Slide 03 end  -->
+        </div>
+      </div>
+      <!-- Header slider end  -->
+    </header>
+
     <!-- header section end  -->
   </body>
 </html>
