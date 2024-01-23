@@ -14,11 +14,21 @@
   font-family: "Manrope", sans-serif;
   color: #131318;
 }
+
 @media screen and (min-width: 320px) and (max-width: 600px) {
+  .container {
+    width: calc(100% - 24px) !important;
+  }
   .sl-btn-control {
     top: 120px;
   }
   .btn-circle {
     font-size: 16px !important;
+  }
+  .carousel-item .text-lg {
+    font-size: 18px;
+  }
+  .sec-title-area h2 {
+    font-size: 22px;
   }
 }
