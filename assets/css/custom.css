@@ -146,6 +146,7 @@
   background-color: #ff4240;
   padding: 15px 24px;
   height: 57px !important;
+  width: 57px !important;
 }
 .socail {
   padding: 34px;
@@ -224,6 +225,7 @@
   .p-item {
     width: 100% !important;
     padding: 24px;
+    border: 1px solid rgba(19, 19, 24, 0.1) !important;
   }
   .card-content {
     width: 100%;
