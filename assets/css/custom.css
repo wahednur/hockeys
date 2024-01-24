@@ -173,9 +173,34 @@
 .footer {
   background: #131318;
 }
-.footer a,
+.footer .footer a,
 .footer p {
   color: #ffffff99;
+}
+.footer h3 {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.footer h4 {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.footer a {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  display: block;
 }
 @media screen and (min-width: 320px) and (max-width: 600px) {
   .container {
